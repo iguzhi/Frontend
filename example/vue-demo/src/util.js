@@ -3,5 +3,7 @@ export default function say() {
 }
 
 export function getData() {
-  return '!euv olleh';
+  return new Promise(function(resolve) {
+    resolve('OK!');
+  })
 }
