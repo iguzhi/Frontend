@@ -23,8 +23,8 @@ Warning: `This action is destructive to your repository's history. If you're col
 
 Create a fresh, bare clone of your repository: （新建一个全新的仓库信息：)
 
-    `git clone --bare https://github.com/user/repo.git`
-    `cd repo.git`
+    git clone --bare https://github.com/user/repo.git
+    cd repo.git
 Copy and paste the script, replacing the following variables based on the information you gathered: (在终端复制并粘贴以下脚本，并将以下的变量修改为你需要的)
 
 **OLD_EMAIL**
