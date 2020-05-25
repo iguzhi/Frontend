@@ -21,15 +21,15 @@ Warning: `This action is destructive to your repository's history. If you're col
 ## 操作步骤：
 打开 bash
 
-Create a fresh, bare clone of your repository: （新建一个全新的仓库信息：)
+* Create a fresh, bare clone of your repository: （新建一个全新的仓库信息：)
 
     git clone --bare https://github.com/user/repo.git
     cd repo.git
-Copy and paste the script, replacing the following variables based on the information you gathered: (在终端复制并粘贴以下脚本，并将以下的变量修改为你需要的)
+* Copy and paste the script, replacing the following variables based on the information you gathered: (在终端复制并粘贴以下脚本，并将以下的变量修改为你需要的)
 
-**OLD_EMAIL**
-**CORRECT_NAME**
-**CORRECT_EMAIL**
+****OLD_EMAIL****
+****CORRECT_NAME****
+****CORRECT_EMAIL****
 
 脚本信息：
 ```
@@ -52,15 +52,16 @@ then
     export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 fi
 ' --tag-name-filter cat -- --branches --tags
-Press Enter to run the script.（按下 enter 键来运行这个脚本
-
-Review the new Git history for errors.(校对新的 git 仓库历史）
-
-Push the corrected history to GitHub:（将修改后的仓库历史推到远程）
-
-git push --force --tags origin 'refs/heads/*'
-Clean up the temporary clone: (删除这个仓库)
-
-cd ..
-rm -rf repo.git
 ```
+
+* Press Enter to run the script.（按下 enter 键来运行这个脚本
+
+* Review the new Git history for errors.(校对新的 git 仓库历史）
+
+* Push the corrected history to GitHub:（将修改后的仓库历史推到远程）
+
+`git push --force --tags origin 'refs/heads/*'`
+* Clean up the temporary clone: (删除这个仓库)
+
+`cd ..`
+`rm -rf repo.git`
