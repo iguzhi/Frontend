@@ -64,8 +64,9 @@ fi
 * Review the new Git history for errors.(校对新的 git 仓库历史）
 
 * Push the corrected history to GitHub:（将修改后的仓库历史推到远程）
-
-    git push --force --tags origin 'refs/heads/*'
+```
+  git push --force --tags origin 'refs/heads/*'
+```
 * Clean up the temporary clone: (删除这个仓库)
 ```
   cd ..
