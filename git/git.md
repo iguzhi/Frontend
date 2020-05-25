@@ -72,3 +72,11 @@ fi
   cd ..
   rm -rf repo.git
 ```
+
+如果提示
+```
+Cannot create a new backup.
+A previous backup already exists in refs/original/
+Force overwriting the backup with -f
+```
+可以加上 -f，即`git filter-branch -f --env-filter`，不明原理，但加上了确实管用，谨慎使用
